@@ -8,6 +8,7 @@
 <!-- Feather icon-->
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/feather-icon.css') }}">
 <!-- Plugins css start-->
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/chartist.css') }}">
 @stack('css')
 <!-- Responsive css-->
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">

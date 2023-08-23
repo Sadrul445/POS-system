@@ -11,11 +11,12 @@
                     <div class="login-card">
                         <form method="POST" action="{{ route('login') }}" class="theme-form login-form">
                             @csrf
-                            <div class="d-flex justify-content-center"><img
-                                        class="img-fluid" src="#"
-                                        alt=""><h3> {{ config('app.name', 'Point of Sale - POS') }}</h3>
+                            <div class="d-flex justify-content-center">
+                                <img class="img-fluid" src="{{ asset('assets/images/logo/pos.png') }}" alt=""
+                                    height="35" width="35">
+                                <h3 class="mx-2 my-1"> {{ config('app.name', 'Point of Sale - POS') }}</h3>
                             </div>
-                            <h5 class="py-2">Login</h5>
+                            <h5 class="my-3 py-2">Login</h5>
                             <h6>Welcome back! Log in to your account.</h6>
 
                             <!-- Email Address -->

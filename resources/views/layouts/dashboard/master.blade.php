@@ -55,6 +55,7 @@
                 <!-- Container-fluid starts-->
                 @yield('content')
                 <!-- Container-fluid Ends-->
+                @includeIf('layouts.dashboard.partials.dashboardData')
             </div>
             <!-- footer start-->
             <footer class="footer">

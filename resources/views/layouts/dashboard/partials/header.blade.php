@@ -1,27 +1,26 @@
 <div class="page-main-header">
-    <div class="main-header-right row m-0">
+    <div class="main-header-right row m-0 ">
         <div class="main-header-left">
             <div class="logo-wrapper">
                 <a href="{{ route('dashboard') }}">
-                    {{-- <img class="img-fluid" src="{{ asset('assets/images/dashboard/neocon_group.svg') }}" alt=""> --}}
-                    <h4 class="px-4" style="border: 2px solid;border-radius:10px">POS-IMS</h4>
+                    <p class="px-4 my-2" style="border-radius:10px"><img class="img" src="{{ asset('assets/images/logo/pos.png') }}" alt="" height="35" width="35"> <strong>POS-IMS</strong></p>
                 </a>
                 {{-- <span style="color:#262626; padding" class="mx-4"><b>Admin Panel</b></span> --}}
             </div>
             <div class="dark-logo-wrapper"><a href="#route_index">
-                    {{-- <img class="img-fluid" src="{{ asset('assets/images/dashboard/neocon_group.svg') }}" alt=""> --}}
-                    {{-- <h4 class="p-2" style="border: 2px solid;border-radius:10px">POS-IMS</h4> --}}
-                </a></div>
+                <a href="{{ route('dashboard') }}">
+                    <p class="px-4 my-2" style="border-radius:10px"><img class="img" src="{{ asset('assets/images/logo/pos.png') }}" alt="" height="35" width="35"> <strong>POS-IMS</strong></p>
+                </a>
+            </div>
             <div class="toggle-sidebar">
-                <i class="status_toggle middle" data-feather="align-center" id="sidebar-toggle"
-                    style="color: #FF6536"></i>
+                <i class="status_toggle middle" data-feather="align-center" id="sidebar-toggle"></i>
             </div>
         </div>
         <div class="left-menu-header col">
             <ul>
                 <li>
                     <form class="form-inline search-form">
-                        <div class="search-bg"><i class="fa fa-search" style="color: #FF6536"></i>
+                        <div class="search-bg"><i class="fa fa-search" {{-- style="color: #FF6536" --}}></i>
                             <input class="form-control-plaintext" placeholder="Search here.....">
                         </div>
                     </form>
@@ -147,7 +146,7 @@
                 <li class="onhover-dropdown p-0">
                     <a href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <button class="btn btn-outline-dark " style="color:#FF6536" type="button">
+                        <button class="btn btn-outline-dark " {{-- style="color:#FF6536" --}} type="button">
                             <i data-feather="log-out"></i>Log Out
                         </button>
                     </a>

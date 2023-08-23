@@ -8,6 +8,11 @@
 <!-- Bootstrap js-->
 <script src="{{ asset('assets/js/bootstrap/popper.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap/bootstrap.min.js') }}"></script>
+{{-- chartist js --}}
+<script src="{{ asset('assets/js/chart/chartist/chartist.js') }}"></script>
+<script src="{{ asset('assets/js/chart/chartist/chartist-plugin-tooltip.js') }}"></script>
+<script src="{{ asset('assets/js/chart/chartist/chartist-custom.js') }}"></script>
+
 <!-- Theme js-->
 <script src="{{ asset('assets/js/script.js') }}"></script>
 <script src="{{ asset('assets/js/theme-customizer/customizer.js') }}"></script>
