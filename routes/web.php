@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', function () {
+    Route::get('/dashboard', function () {
         return view('layouts.dashboard.adminPanel');
     })->middleware(['auth', 'verified'])->name('dashboard');
     
@@ -28,6 +28,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/index', [EmployeeController::class, 'index'])->name('employee.index');
         Route::get('/create', [EmployeeController::class, 'create'])->name('employee.create');
         Route::post('/store', [EmployeeController::class, 'store'])->name('employee.store');
+        Route::get('/view/{id}', [EmployeeController::class, 'singleView'])->name('employee.singleView');
         Route::get('/edit/{id}', [EmployeeController::class, 'edit'])->name('employee.edit');
         Route::put('/{id}', [EmployeeController::class, 'update'])->name('employee.update');
         Route::delete('/delete/{id}', [EmployeeController::class, 'destroy'])->name('employee.destroy');

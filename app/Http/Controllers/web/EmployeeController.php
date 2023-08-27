@@ -41,6 +41,10 @@ class EmployeeController extends Controller
             session()->flash('create', 'Employee Created Successfully');
         return redirect()->route('employee.index');
     }
+    public function singleView(Request $request, $id){
+        $employee = Employee::findOrFail($id);
+        return view('layouts.dashboard.employee.singleView',compact('employee'));
+    }
     public function edit(Request $request, $id){
         $employee = Employee::findOrFail($id);
         return view('layouts.dashboard.employee.update',compact('employee'));

@@ -15,7 +15,9 @@
     @endcomponent
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-2">        
+            </div>
+            <div class="col-sm-8">
                 <div class="card">
                     <div class="card-body">
                         <div class="table table-responsive">
@@ -43,10 +45,10 @@
                                         <th>Name</th>
                                         <th>NID Number</th>
                                         <th>Designation</th>
-                                        <th>Experience</th>
-                                        <th>Address</th>
-                                        <th>Salary</th>
-                                        <th>Vacation</th>
+                                        {{-- <th>Experience</th> --}}
+                                        {{-- <th>Address</th> --}}
+                                        {{-- <th>Salary</th> --}}
+                                        {{-- <th>Vacation</th> --}}
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -54,25 +56,25 @@
                                     @foreach ($employees as $employee)
                                         <tr>
                                             <td>
-                                                <img src="{{ asset('storage/' . $employee->image) }}" alt="Employee Image"
-                                                    width="70">
+                                                <img class="shadow bg-body rounded" src="{{ asset('storage/' . $employee->image) }}" alt="Employee Image"
+                                                    width="50%">
                                             </td>
                                             <td>{{ $employee->name }}</td>
                                             <td>{{ $employee->nid }}</td>
                                             <td>{{ $employee->designation }}</td>
-                                            <td>{{ $employee->experience }}</td>
-                                            <td>
+                                            {{-- <td>{{ $employee->experience }}</td> --}}
+                                            {{-- <td>
                                                 <div class="collapse-content" id="collapseContent{{ $employee->id }}">
                                                 {{ $employee->address }}
                                                 </div>
-                                            </td>
-                                            <td>{{ $employee->salary }}</td>
-                                            <td>{{ $employee->vacation }}</td>
+                                            </td> --}}
+                                            {{-- <td>{{ $employee->salary }}</td> --}}
+                                            {{-- <td>{{ $employee->vacation }}</td> --}}
                                             <td>
                                                 <div class="d-flex">
                                                     <div>
-                                                        <a href="{{ route('employee.edit', ['id' => $employee->id]) }}"
-                                                            class="btn btn-outline-primary">Edit</a>
+                                                        <a href="{{ route('employee.singleView', ['id' => $employee->id]) }}"
+                                                            class="btn btn-outline-primary">View</a>
                                                     </div>
                                                     <div style="margin-left:5px">
                                                         <form
@@ -127,6 +129,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-sm-2">
             </div>
         </div>
     </div>

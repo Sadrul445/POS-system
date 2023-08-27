@@ -11,9 +11,10 @@
         <li class="breadcrumb-item">Employee</li>
         <li class="breadcrumb-item">Create</li>
     @endcomponent
-    <div class="container w-50">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
                         <form action="{{ route('employee.store') }}" enctype="multipart/form-data" method="POST">
@@ -76,6 +77,7 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-3"></div>
         </div>
     </div>
 @endsection
