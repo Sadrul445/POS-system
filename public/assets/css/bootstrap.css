@@ -3916,8 +3916,8 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #D9171A;
-  font-weight: bold;
+  color: #000;
+  font-weight: 500;
   text-decoration: none;
   background-color: #fff;
   background-color: #fff;
@@ -3934,11 +3934,11 @@ textarea.form-control-lg {
   .page-link:hover {
     z-index: 2;
     color: #fff;
-    background-color: #D9171A;
+    background-color: #000;
     border-color: #dee2e6; }
   .page-link:focus {
     z-index: 3;
-    color: #D9171A;
+    color: #000;
     background-color: #e9ecef;
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -3950,8 +3950,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #D9171A;
-  border-color: #D9171A; }
+  background-color: #adb5bd;
+  border-color: #adb5bd; }
 
 .page-item.disabled .page-link {
   color: #6c757d;

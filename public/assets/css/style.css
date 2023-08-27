@@ -17371,7 +17371,7 @@ table.dataTable.display tbody tr {
     box-shadow: none;
 }
 
-.pagination-dark .page-item.active .page-link {
+.pagination-dark .page-item .active .page-link {
     color: #fff !important;
     background-color: #2c323f !important;
     border-color: #2c323f;

@@ -13,7 +13,7 @@
     <link rel="icon" href="{{ asset('assets/images/logo/sadrul-logo.ico') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/sadrul-logo.ico') }}" type="image/x-icon">
 
-    <title>@yield('title')</title>
+    <title>@yield('title','Dashboard')</title>
 
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,7 +55,7 @@
                 <!-- Container-fluid starts-->
                 @yield('content')
                 <!-- Container-fluid Ends-->
-                {{-- @includeIf('layouts.dashboard.partials.dashboardData') --}}
+                @includeIf('layouts.dashboard.partials.dashboardData')
             </div>
             <!-- footer start-->
             <footer class="footer">

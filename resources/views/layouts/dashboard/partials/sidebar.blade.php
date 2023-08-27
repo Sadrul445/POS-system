@@ -36,14 +36,14 @@
                     </li>
                     {{-- <li class="sidebar-main-title">
                     </li> --}}
-                    {{-- <li class="dropdown">
+                    <li class="dropdown">
                         <a class="nav-link menu-title " href="javascript:void(0)"><i
                                 data-feather="airplay"></i><span>Employee</span></a>
                         <ul class="nav-submenu menu-content" style="display: none;">
                             <li><a href="{{ route('employee.create') }}" class="#">Create Employee</a></li>
                             <li><a href="{{ route('employee.index') }}" class="#">List of Employee</a></li>
                         </ul>
-                    </li> --}}
+                    </li>
                 </ul>
             </div>
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
