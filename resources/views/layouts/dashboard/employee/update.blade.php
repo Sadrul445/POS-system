@@ -18,7 +18,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5>Update Employee</h5>
+                        <h5 class="mb-4">Update Employee</h5>
                         <form action="{{ route('employee.update', ['id' => $employee->id]) }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
@@ -35,7 +35,6 @@
                                 </div>
                                 <div class="col">
                                     <x-input-label class="form-label" for="name" :value="__('Name')" />
-                                    <span class="text-danger">(*)</span>
                                     <x-text-input class="form-control" id="name" type="text"
                                         value="{{ $employee->name }}" name="name" />
                                 </div>
@@ -43,13 +42,11 @@
                             <div class="d-flex row mb-4">
                                 <div class="col">
                                     <x-input-label class="form-label" for="nid" :value="__('National Id Card (NID)')" />
-                                    <span class="text-danger">(*)</span>
                                     <x-text-input class="form-control" id="nid" type="number"
                                         value="{{ $employee->nid }}" name="nid" />
                                 </div>
                                 <div class="col">
                                     <x-input-label class="form-label" for="designation" :value="__('Designation')" />
-                                    <span class="text-danger">(*)</span>
                                     <x-text-input class="form-control" id="designation" type="text"
                                         value="{{ $employee->designation }}" name="designation" />
                                 </div>
@@ -57,30 +54,22 @@
                             <div class="row mb-4">
                                 <div class="col">
                                     <x-input-label class="form-label" for="experience" :value="__('Experience (Yearly)')" />
-                                    <span class="text-danger">(*)</span>
                                     <x-text-input class="form-control" id="experience" type="number"
                                         value="{{ $employee->experience }}" name="experience" />
                                 </div>
-                            </div>
-                            <div class="row mb-4">
                                 <div class="col">
-                                    <x-input-label class="form-label" for="address" :value="__('address')" />
-                                    <span class="text-danger">(*)</span>
+                                    <x-input-label class="form-label" for="address" :value="__('Address')" />
                                     <textarea class="form-control" id="address" name="address">{{ $employee->address }}</textarea>
                                 </div>
                             </div>
                             <div class="row mb-4">
                                 <div class="col">
-                                    <x-input-label class="form-label" for="salary" :value="__('Salary(BDT)')" />
-                                    <span class="text-danger">(*)</span>
+                                    <x-input-label class="form-label" for="salary" :value="__('Salary (BDT)')" />
                                     <x-text-input class="form-control" id="salary" type="number"
                                         value="{{ $employee->salary }}" name="salary" />
                                 </div>
-                            </div>
-                            <div class="row mb-4">
                                 <div class="col">
-                                    <x-input-label class="form-label" for="vacation" :value="__('Vacation(Days)')" />
-                                    <span class="text-danger">(*)</span>
+                                    <x-input-label class="form-label" for="vacation" :value="__('Vacation (Days)')" />
                                     <x-text-input class="form-control" id="vacation" type="number"
                                         value="{{ $employee->vacation }}" name="vacation" />
                                 </div>

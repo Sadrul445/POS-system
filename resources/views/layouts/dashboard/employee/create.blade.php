@@ -55,7 +55,7 @@
                             </div>
                             <div class="row mb-4">
                                 <div class="col">
-                                    <x-input-label class="form-label" for="salary" :value="__('Salary(BDT)')" />
+                                    <x-input-label class="form-label" for="salary" :value="__('Salary (BDT)')" />
                                     <x-text-input class="form-control" id="salary" type="number"
                                         placeholder="Enter your salary here..." required="" name="salary" />
                                 </div>

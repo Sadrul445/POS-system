@@ -12,7 +12,7 @@
 @stack('css')
 <!-- Responsive css-->
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom-datatable.css') }}">
+{{-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom-datatable.css') }}"> --}}
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/datatables.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/datatable-extension.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.css" integrity="sha512-jU/7UFiaW5UBGODEopEqnbIAHOI8fO6T99m7Tsmqs2gkdujByJfkCbbfPSN4Wlqlb9TGnsuC0YgUgWkRBK7B9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />

@@ -18,7 +18,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="table-responsive">
+                        <div class="table table-responsive">
                             <div>
                                 @if (session()->has('create'))
                                     <div class="alert alert-success">
@@ -96,11 +96,11 @@
                                         {{-- Previous Page Link --}}
                                         @if ($employees->onFirstPage())
                                             <li class="page-item px-6 disabled">
-                                                <span class="page-link" tabindex="-1" aria-disabled="true"><i class="icon-angle-double-left "></i>Previous</span>
+                                                <span class="page-link" tabindex="-1" aria-disabled="true">Previous</span>
                                             </li>
                                         @else
                                             <li class="page-item">
-                                                <a class="page-link" href="{{ $employees->previousPageUrl() }}" tabindex="-1" aria-disabled="false"><i class="icon-angle-double-left"></i>Previous</a>
+                                                <a class="page-link" href="{{ $employees->previousPageUrl() }}" tabindex="-1" aria-disabled="false">Previous</a>
                                             </li>
                                         @endif
                                         
@@ -114,26 +114,24 @@
                                         {{-- Next Page Link --}}
                                         @if ($employees->hasMorePages())
                                             <li class="page-item">
-                                                <a class="page-link" href="{{ $employees->nextPageUrl() }}">Next<i class="icon-angle-double-right"></i></a>
+                                                <a class="page-link" href="{{ $employees->nextPageUrl() }}">Next</a>
                                             </li>
                                         @else
                                             <li class="page-item disabled">
-                                                <span class="page-link">Next<i class="icon-angle-double-right mt-4"></i></span>
+                                                <span class="page-link">Next</span>
                                             </li>
                                         @endif
                                     </ul>
                                 </nav>
-                            </div>
-                            
-                            
+                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    @push('scripts')
+    {{-- @push('scripts')
         <script src="{{ asset('assets/js/datatable/datatables/jquery.dataTables.min.js')}}"></script>
         <script src="{{ asset('assets/js/datatable/datatables/datatable.custom.js')}}"></script>
-    @endpush
+    @endpush --}}
 @endsection
