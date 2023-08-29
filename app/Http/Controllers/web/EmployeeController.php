@@ -35,8 +35,11 @@ class EmployeeController extends Controller
                 'designation'=>$request->designation,
                 'experience'=>$request->experience,
                 'address'=>$request->address,
+                'phone'=>$request->phone,
+                'city'=>$request->city,
                 'salary'=>$request->salary,
-                'vacation'=>$request->vacation
+                'vacation'=>$request->vacation,
+
             ]);
             session()->flash('create', 'Employee Created Successfully');
         return redirect()->route('employee.index');
@@ -56,6 +59,8 @@ class EmployeeController extends Controller
         $employee->designation = $request->input('designation');
         $employee->experience = $request->input('experience');
         $employee->address = $request->input('address');
+        $employee->phone = $request->input('phone');
+        $employee->city = $request->input('city');
         $employee->salary = $request->input('salary');
         $employee->vacation = $request->input('vacation');
 

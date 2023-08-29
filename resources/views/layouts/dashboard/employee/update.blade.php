@@ -16,7 +16,7 @@
     <div class="container w-50">
         <div class="row">
             <div class="col-sm-12">
-                <div class="card">
+                <div class="card shadow-sm" style="border-radius: 2%">
                     <div class="card-body">
                         <h5 class="mb-4">Update Employee</h5>
                         <form action="{{ route('employee.update', ['id' => $employee->id]) }}" method="POST"
@@ -60,6 +60,18 @@
                                 <div class="col">
                                     <x-input-label class="form-label" for="address" :value="__('Address')" />
                                     <textarea class="form-control" id="address" name="address">{{ $employee->address }}</textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <x-input-label class="form-label" for="phone" :value="__('Phone Number')" />
+                                    <x-text-input class="form-control" id="phone" type="tel"
+                                        value="{{ $employee->phone }}" name="phone" />
+                                </div>
+                                <div class="col">
+                                    <x-input-label class="form-label" for="city" :value="__('City')" />
+                                    <x-text-input class="form-control" id="city" type="text"
+                                        value="{{ $employee->city }}" name="city" />
                                 </div>
                             </div>
                             <div class="row mb-4">

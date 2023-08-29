@@ -15,10 +15,10 @@
     @endcomponent
     <div class="container">
         <div class="row">
-            <div class="col-sm-2">        
+            <div class="col-sm-3">        
             </div>
-            <div class="col-sm-8">
-                <div class="card">
+            <div class="col-sm-7">
+                <div class="card shadow-sm" style="border-radius: 2%">
                     <div class="card-body">
                         <div class="table table-responsive">
                             <div>
@@ -38,17 +38,13 @@
                                     </div>
                                 @endif
                             </div>
-                            <table class="text-center display" id="data-source-1">
+                            <table class="text-center display" id="basic-1">
                                 <thead style="font-size:12px;text-align:center">
                                     <tr>
                                         <th>Image</th>
                                         <th>Name</th>
                                         <th>NID Number</th>
                                         <th>Designation</th>
-                                        {{-- <th>Experience</th> --}}
-                                        {{-- <th>Address</th> --}}
-                                        {{-- <th>Salary</th> --}}
-                                        {{-- <th>Vacation</th> --}}
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -56,20 +52,12 @@
                                     @foreach ($employees as $employee)
                                         <tr>
                                             <td>
-                                                <img class="shadow bg-body rounded" src="{{ asset('storage/' . $employee->image) }}" alt="Employee Image"
-                                                    width="50%">
+                                                <img class="shadow" style="border-radius:100%" src="{{ asset('storage/' . $employee->image) }}" alt="Employee Image"
+                                                    width="64px" height="70px">
                                             </td>
                                             <td>{{ $employee->name }}</td>
                                             <td>{{ $employee->nid }}</td>
                                             <td>{{ $employee->designation }}</td>
-                                            {{-- <td>{{ $employee->experience }}</td> --}}
-                                            {{-- <td>
-                                                <div class="collapse-content" id="collapseContent{{ $employee->id }}">
-                                                {{ $employee->address }}
-                                                </div>
-                                            </td> --}}
-                                            {{-- <td>{{ $employee->salary }}</td> --}}
-                                            {{-- <td>{{ $employee->vacation }}</td> --}}
                                             <td>
                                                 <div class="d-flex">
                                                     <div>

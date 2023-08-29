@@ -41,6 +41,10 @@
                                     <p>{{ $employee->experience }}</p>
                                     <x-input-label class="form-label fw-bold" for="address" :value="__('Address')" />
                                     <p>{{ $employee->address }}</p>
+                                    <x-input-label class="form-label fw-bold" for="phone" :value="__('Phone Number')" />
+                                    <p>{{ $employee->phone }}</p>
+                                    <x-input-label class="form-label fw-bold" for="city" :value="__('City')" />
+                                    <p>{{ $employee->city }}</p>
                                     <x-input-label class="form-label fw-bold" for="salary" :value="__('Salary (BDT)')" />
                                     <p>{{ $employee->salary }}</p>
                                     <x-input-label class="form-label fw-bold" for="vacation" :value="__('Vacation (Days)')" />

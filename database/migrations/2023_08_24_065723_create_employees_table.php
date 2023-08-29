@@ -19,6 +19,8 @@ return new class extends Migration
             $table->longText('designation');
             $table->string('experience')->nullable();
             $table->longText('address');
+            $table->string('phone');
+            $table->string('city');
             $table->string('salary');
             $table->string('vacation')->nullable();
             $table->timestamps();
