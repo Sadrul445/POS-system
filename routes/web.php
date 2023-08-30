@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\web\CustomerController;
 use App\Http\Controllers\web\EmployeeController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,15 @@ Route::middleware('auth')->group(function () {
         Route::get('/edit/{id}', [EmployeeController::class, 'edit'])->name('employee.edit');
         Route::put('/{id}', [EmployeeController::class, 'update'])->name('employee.update');
         Route::delete('/delete/{id}', [EmployeeController::class, 'destroy'])->name('employee.destroy');
+    });
+    Route::prefix('customer')->group(function(){
+        Route::get('/index', [CustomerController::class, 'index'])->name('customer.index');
+        Route::get('/create', [CustomerController::class, 'create'])->name('customer.create');
+        Route::post('/store', [CustomerController::class, 'store'])->name('customer.store');
+        Route::get('/view/{id}', [CustomerController::class, 'singleView'])->name('customer.singleView');
+        Route::get('/edit/{id}', [CustomerController::class, 'edit'])->name('customer.edit');
+        Route::put('/{id}', [CustomerController::class, 'update'])->name('customer.update');
+        Route::delete('/delete/{id}', [CustomerController::class, 'destroy'])->name('customer.destroy');
     });
 });
 
